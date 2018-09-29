@@ -1,0 +1,37 @@
+<h1> All sudent </h1>
+<br>
+
+
+
+<table class = "table">
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Gender</td>
+            <td>Father name</td>
+            <td>email</td>
+            <td>mobile </td>
+            
+            <td>Action</td>
+            
+        </tr>
+    {% for student in all_student %}
+    <tr>
+    <td>{{student.name}}</td>
+    <td>{{student.age}}</td>
+    <td>{{student.gender}}</td>
+    <td>{{student.fathers_name}}</td>
+    <td>{{student.email}}</td>
+    <td>{{student.mobile_nember}}</td>
+    
+    
+   
+    <td>
+            <a class="btn btn-danger" href="{% url 'delete-student-urls' student.id %}">Delete</a>
+        </td>
+
+
+    
+    </tr>
+    {% endfor %}
+    </table>

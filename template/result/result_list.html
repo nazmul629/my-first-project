@@ -1,0 +1,18 @@
+<h1>
+    Result list page
+</h1>
+
+<br>
+
+<h2>Name</h2>
+
+
+
+{% for result in all_result %}
+
+<p>{{result.student_name}}</p>
+
+{% endfor %}
+<br>
+<br>
+<a href="{%url 'creat_result_urls' %}"> creat result </a>

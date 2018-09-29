@@ -1,0 +1,21 @@
+
+
+
+{% extends 'base.html' %}
+{% block content %}
+
+
+<h1> ADD result page 
+</h1>
+<div class= "container col-lg-6" > 
+<form class="" action="" method="post">
+
+    {% csrf_token %}
+    {{forms.as_p}}
+
+    <input type="submit" value="Submit">
+
+</form>
+</div>
+
+{% endblock %}

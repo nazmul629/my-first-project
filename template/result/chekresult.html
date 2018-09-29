@@ -1,0 +1,17 @@
+<h1>Chake result page </h1>
+
+<form class="" action="" method="post">
+        {% csrf_token %}
+        {{forms.as_p}}
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+    {% if name %}
+    <h2> roll : {{roll}} 
+         name : {{name}} 
+         result : {{gpa}}</h2>
+
+    {% endif %}
+
